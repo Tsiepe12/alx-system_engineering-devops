@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Use find to locate subdirectories in the current directory
+# and then apply the execute permission to them
+find . -type d -exec chmod a+rx {} \;

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Use the touch command to create an empty file named hello
+touch hello

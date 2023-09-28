@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Define the permissions as octal notation:
+# Owner (user) gets execute permission (1)
+# Group owner gets execute permission (1)
+# Others get execute permission (1)
+# Set the read (4) and write (2) permissions to zero (0)
+chmod 111 hello

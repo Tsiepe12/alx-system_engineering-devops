@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Use the chown command to change the owner of the file hello to betty
+chown betty hello

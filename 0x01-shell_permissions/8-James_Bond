@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Set the permissions using octal notation:
+# Owner (user) gets no permission (0)
+# Group owner gets no permission (0)
+# Others get all permissions (7, which is read + write + execute)
+chmod 007 hello

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Use the groups command to get a list of groups for the current user
+user_groups=$(groups)
+
+# Print the list of groups
+echo "$user_groups"

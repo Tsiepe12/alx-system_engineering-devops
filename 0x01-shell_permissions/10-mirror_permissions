@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Get the mode of olleh and store it in a variable
+mode=$(stat -c "%a" olleh)
+
+# Set the mode of hello to be the same as olleh's mode
+chmod $mode hello
