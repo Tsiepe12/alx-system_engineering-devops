@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Use 'sed' to replace characters 'A' with 'Z' and 'c' with 'e'
+sed 's/A/Z/g; s/c/e/g'

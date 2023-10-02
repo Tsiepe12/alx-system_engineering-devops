@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Use awk to extract and print user and home directory columns
+awk -F ':' '{print $1 ":" $6}' /etc/passwd | sort -t ':' -k1

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Use 'find' to search for directories (including hidden ones) but exclude "." and ".."
+num_directories=$(find . -mindepth 1 -type d | wc -l)
+
+echo "$num_directories"

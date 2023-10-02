@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Check if /etc/passwd exists
+if [ -f "/etc/passwd" ]; then
+    # Use 'grep' to find lines containing the pattern "root" in /etc/passwd
+    grep "root" /etc/passwd
+else
+    echo "The file /etc/passwd does not exist."
+fi

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Use 'tr' to remove characters 'c' and 'C'
+tr -d 'cC'

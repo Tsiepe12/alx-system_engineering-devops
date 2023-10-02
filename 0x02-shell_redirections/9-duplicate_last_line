@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Check if the file 'iacta' exists
+if [ -f "iacta" ]; then
+    # Get the last line of the file
+    last_line=$(tail -n 1 iacta)
+    # Append the last line to the end of the file
+    echo "$last_line" >> iacta
+    echo "Last line duplicated in 'iacta'."
+else
+    echo "File 'iacta' not found in the working directory."
+fi
