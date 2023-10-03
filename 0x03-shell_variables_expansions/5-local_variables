@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# List all local variables
+local_variables=$(declare -p | grep "^declare -- ")
+
+# List all environment variables
+environment_variables=$(env)
+
+# List all functions
+functions=$(declare -F | awk '{print $3}')
+
+# Print the local variables
+echo "Local Variables:"
+echo "$local_variables"
+
+# Print the environment variables
+echo "Environment Variables:"
+echo "$environment_variables"
+
+# Print the functions
+echo "Functions:"
+echo "$functions"

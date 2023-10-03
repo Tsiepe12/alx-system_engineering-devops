@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Split the PATH variable into an array using ':' as the delimiter
+IFS=':' read -ra path_array <<< "$PATH"
+
+# Initialize a counter
+count=0
+
+# Loop through the array and count the directories
+for directory in "${path_array[@]}"; do
+  if [ -n "$directory" ]; then
+    count=$((count + 1))
+  fi
+done
+
+# Print the count
+echo "$count"

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Check if the BREATH and LOVE environment variables are set
+if [ -n "$BREATH" ] && [ -n "$LOVE" ]; then
+  # Calculate the result using the 'bc' calculator with exponentiation
+  result=$(echo "$BREATH ^ $LOVE" | bc)
+
+  # Print the result followed by a new line
+  echo "$result"
+else
+  echo "BREATH or LOVE is not set."
+fi

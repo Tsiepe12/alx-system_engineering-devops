@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Add /action to the PATH if it's not already there
+if [[ ":$PATH:" != *":/action:"* ]]; then
+  export PATH="$PATH:/action"
+fi

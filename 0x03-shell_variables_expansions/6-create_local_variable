@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Create a new local variable named BEST with the value "School"
+declare BEST="School"
+
+# Print the value of the BEST variable
+echo "BEST is set to: $BEST"

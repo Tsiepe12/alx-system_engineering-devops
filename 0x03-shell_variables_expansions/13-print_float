@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Check if the NUM environment variable is set
+if [ -n "$NUM" ]; then
+  # Use printf to format the number with two decimal places
+  printf "%.2f\n" "$NUM"
+else
+  echo "NUM is not set."
+fi
